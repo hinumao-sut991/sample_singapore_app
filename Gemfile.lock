@@ -41,10 +41,10 @@ GEM
       tzinfo (~> 1.1)
     ansi (1.5.0)
     arel (8.0.0)
-    autoprefixer-rails (9.4.7)
+    autoprefixer-rails (9.6.1)
       execjs
     bcrypt (3.1.12)
-    bindex (0.5.0)
+    bindex (0.8.1)
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
@@ -64,37 +64,32 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.1.4)
+    concurrent-ruby (1.1.5)
     crass (1.0.4)
-    domain_name (0.5.20190701)
-      unf (>= 0.0.5, < 1.0.0)
     dry-inflector (0.1.2)
     erubi (1.8.0)
     excon (0.65.0)
     execjs (2.7.0)
     faker (1.7.3)
       i18n (~> 0.5)
-    ffi (1.10.0)
+    ffi (1.11.1)
     fission (0.5.0)
       CFPropertyList (~> 2.2)
-    fog (1.42.0)
+    fog (1.40.0)
       fog-aliyun (>= 0.1.0)
       fog-atmos
       fog-aws (>= 0.6.0)
       fog-brightbox (~> 0.4)
       fog-cloudatcost (~> 0.1.0)
-      fog-core (~> 1.45)
+      fog-core (~> 1.43)
       fog-digitalocean (>= 0.3.0)
       fog-dnsimple (~> 1.0)
       fog-dynect (~> 0.0.2)
       fog-ecloud (~> 0.1)
       fog-google (<= 0.1.0)
-      fog-internet-archive
-      fog-joyent
       fog-json
       fog-local
       fog-openstack
-      fog-ovirt
       fog-powerdns (>= 0.1.1)
       fog-profitbricks
       fog-rackspace
@@ -111,7 +106,7 @@ GEM
       fog-xenserver
       fog-xml (~> 0.1.1)
       ipaddress (~> 0.5)
-      json (~> 2.0)
+      json (>= 1.8, < 2.0)
     fog-aliyun (0.3.4)
       fog-core
       fog-json
@@ -158,13 +153,6 @@ GEM
       fog-core
       fog-json
       fog-xml
-    fog-internet-archive (0.0.1)
-      fog-core
-      fog-json
-      fog-xml
-    fog-joyent (0.0.1)
-      fog-core (~> 1.42)
-      fog-json (>= 1.0)
     fog-json (1.2.0)
       fog-core
       multi_json (~> 1.10)
@@ -174,12 +162,6 @@ GEM
       fog-core (>= 1.45, <= 2.1.0)
       fog-json (>= 1.0)
       ipaddress (>= 0.8)
-    fog-ovirt (1.2.0)
-      fog-core
-      fog-json
-      fog-xml
-      ovirt-engine-sdk (>= 4.1.3)
-      rbovirt (~> 0.1.5)
     fog-powerdns (0.2.0)
       fog-core
       fog-json
@@ -247,8 +229,6 @@ GEM
     guard-minitest (2.4.4)
       guard-compat (~> 1.2)
       minitest (>= 3.0)
-    http-cookie (1.0.3)
-      domain_name (~> 0.5)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     ipaddress (0.8.3)
@@ -259,7 +239,7 @@ GEM
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
-    json (2.2.0)
+    json (1.8.6)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -275,7 +255,7 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2019.0331)
     mini_magick (4.7.0)
-    mini_mime (1.0.1)
+    mini_mime (1.0.2)
     mini_portile2 (2.4.0)
     minitest (5.10.3)
     minitest-reporters (1.1.14)
@@ -285,22 +265,19 @@ GEM
       ruby-progressbar
     multi_json (1.13.1)
     nenv (0.3.0)
-    netrc (0.11.0)
-    nio4r (2.3.1)
-    nokogiri (1.10.1)
+    nio4r (2.4.0)
+    nokogiri (1.10.3)
       mini_portile2 (~> 2.4.0)
     notiffany (0.1.1)
       nenv (~> 0.1)
       shellany (~> 0.0)
     optimist (3.0.0)
-    ovirt-engine-sdk (4.3.0)
-      json (>= 1, < 3)
     pg (0.20.0)
     pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
     puma (3.9.1)
-    rack (2.0.6)
+    rack (2.0.7)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (5.1.6)
@@ -330,25 +307,18 @@ GEM
       method_source
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
-    rake (12.3.2)
+    rake (12.3.3)
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
-    rbovirt (0.1.7)
-      nokogiri
-      rest-client (> 1.7.0)
     rbvmomi (2.2.0)
       builder (~> 3.0)
       json (>= 1.8)
       nokogiri (~> 1.5)
       optimist (~> 3.0)
-    rest-client (2.0.2)
-      http-cookie (>= 1.0.2, < 2.0)
-      mime-types (>= 1.16, < 4.0)
-      netrc (~> 0.8)
-    ruby-progressbar (1.10.0)
+    ruby-progressbar (1.10.1)
     ruby_dep (1.5.0)
-    sass (3.7.3)
+    sass (3.7.4)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -383,9 +353,6 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
-    unf (0.1.4)
-      unf_ext
-    unf_ext (0.0.7.6)
     web-console (3.5.1)
       actionview (>= 5.0)
       activemodel (>= 5.0)
@@ -393,7 +360,7 @@ GEM
       railties (>= 5.0)
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
-    websocket-extensions (0.1.3)
+    websocket-extensions (0.1.4)
     will_paginate (3.1.6)
     xml-simple (1.1.5)
     xmlrpc (0.3.0)
@@ -409,7 +376,7 @@ DEPENDENCIES
   carrierwave (= 1.2.2)
   coffee-rails (= 4.2.2)
   faker (= 1.7.3)
-  fog (= 1.42)
+  fog (= 1.40.0)
   guard (= 2.13.0)
   guard-minitest (= 2.4.4)
   jbuilder (= 2.7.0)
@@ -433,4 +400,4 @@ DEPENDENCIES
   will_paginate (= 3.1.6)
 
 BUNDLED WITH
-   1.17.1
+   1.17.3
